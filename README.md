@@ -1,6 +1,6 @@
-# demo-project
+# immune-epitope-prediction
 
-A brief description of the project. Explain what it does and who it's for.
+Predicting Immune Epitopes using Deep Learning
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
