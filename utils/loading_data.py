@@ -48,7 +48,7 @@ def read_results(filename):
 
     # Convert to numpy / torch
     amino_acids = df["amino_acid"].astype(str).values
-    scores = torch.tensor(df["prediction_score"].values, dtype=torch.float32).cuda()
+    scores = torch.tensor(df["prediction_score"].values, dtype=torch.float32)
 
     return amino_acids, scores
 
