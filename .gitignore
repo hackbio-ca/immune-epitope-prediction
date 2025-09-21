@@ -6,3 +6,10 @@ binders.txt
 .nextflow
 work/
 nextflow
+
+# tarballs
+docker/netchop/IEDB_NetChop-3.0.tar.gz
+docker/netmhcpan/netMHCpan-4.2b.Linux.tar.gz
+
+# results
+results
