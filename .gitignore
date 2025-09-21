@@ -1,1 +1,8 @@
-results.txt
+# test files
+result.txt
+binders.txt
+
+# nextflow
+.nextflow
+work/
+nextflow
