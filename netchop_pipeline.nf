@@ -1,9 +1,8 @@
 #!/usr/bin/env nextflow
 
 process run_netchop {
-    errorStrategy 'ignore'
 
-    publishDir "./netchop/", mode: 'copy'
+    publishDir "results/netchop/", mode: 'copy'
 
     input: 
         val input
@@ -15,8 +14,8 @@ process run_netchop {
     """
         cwd=\${PWD}
         cd ~/Documents/immune-epitope-prediction
-        mkdir -p netchop/
-        docker run --rm -v ${PWD}:/data netchop -m netchop $input > netchop/netchop_results.csv
+        mkdir -p results/netchop/
+        docker run --rm -v ${PWD}:/data netchop -m netchop $input > netchop_results.csv
     """
 
 }
