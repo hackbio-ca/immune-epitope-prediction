@@ -1,12 +1,25 @@
-# immune-epitope-prediction
+# HLA-Immune Epitope Prediction
 
-Predicting Immune Epitopes using Deep Learning
+Predicting HLA-Immune Epitopes
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Abstract
 
-A concise summary of the project's goals, the problem it addresses, and its intended audience. This section can include potential use cases and key features.
+The human immune system relies on Human Leukocyte Antigens (HLAs) to present peptide fragments from pathogens to immune cells, initiating immune responses. Understanding which HLAs bind to specific regions of the protein is critical for predicting immunogenicity, particularly in the context of infectious diseases, cancer, and transplant-related complications such as graft-versus-host disease (GvHD).
+
+This project was inspired by the need for more streamlined and accessible tools for non-computational scientists. While existing platforms often require multiple inputs (such as protein sequences, HLA alleles, or complex configurations), this project simplifies the process by accepting primarily a protein sequence as input. It integrates and refines multiple prediction tools into a unified pipeline that outputs a ranked list of HLAs with strong or weak binding affinities, significantly reducing the manual effort and expertise required. 
+
+By bridging protein sequence analysis with HLA binding prediction, this project aims to provide a simplified tool for non-computational researchers and clinicians with actionable insights for translational immunology and therapeutic innovation.
+
+Potential Use Cases:
+- Accelerate/Guide vaccine development by identifying key epitopes shared across common HLA haplotypes for a generalized vaccine against infectious diseases and/or a personalized cancer vaccines
+- Minimize GvHD-related complications by minimizing self-antigen presentation from HLA disparity
+  
+Key Features:
+- Offers a scalable, cost-effective approach to accurately identify priority immune targets for experimental validation
+- Simplified interface for non-computational researchers and clinicians to use
+- Lists common HLA overlaps with different regional population coverage
 
 ## Installation
 
