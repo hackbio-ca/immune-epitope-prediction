@@ -23,21 +23,46 @@ Key Features:
 
 ## Installation
 
-Provide instructions on how to install and set up the project, such as installing dependencies and preparing the environment.
+Requirements:
+- Python
+- NetChop 3.0
+- NetMHCpan 4.2
+
+Clone the repository:
+```bash
+git clone https://github.com/hackbio-ca/immune-epitope-prediction.git
+cd immune-epitope-prediction/
+``````
+
+NetChop Installation Instructions:
+- Go to http://tools.iedb.org/netchop/download/
+- Click on "Agree and Download"
+- Put the downloaded tar.gz file in immune-epitope-prediction/docker/netchop/
+- cd ..
+- docker build -t netchop ./docker/netchop/
+
+NetMHCpan Installation Instructions:
+- Go to https://services.healthtech.dtu.dk/cgi-bin/sw_request?software=netMHCpan&version=4.2&packageversion=4.2b&platform=Linux
+- Enter your information, agree to the terms, and click "Submit"
+- Put the tar.gz emailed to you in immune-epitode-prediction/docker/netmhcpan/
+- cd ..
+- docker build -t netmhcpan ./docker/netmhcpan/
+
+Create and activate a virtual environment (optional but recommended):
+``````bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+``````
 
 ```bash
-# Example command to install dependencies (Python)
-pip install project-dependencies
-
-# Example command to install dependencies (R)
-install.packages("project-dependencies")
+# Required Python packages
+pip install requirements.txt
 ```
 
 ## Quick Start
 
 Provide a basic usage example or minimal code snippet that demonstrates how to use the project.
 
-```python
 # Example usage (Python)
 import my_project
 
